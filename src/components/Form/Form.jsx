@@ -19,7 +19,7 @@ const Form = ({ setCategory }) => {
                     onSubmit={handleNews}
                     className="d-flex flex-column align-items-center"
                 >
-                    <h2>Search news by categories</h2>
+                    <h2 className="my-4">Search news by categories</h2>
                     <SelectNews />
                     <div className="mt-5 col-2 wrapper">
                         <button className="slide_from_left">
