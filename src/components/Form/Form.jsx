@@ -3,14 +3,22 @@ import { OPTIONS } from '../../constants';
 import useSelect from '../../hooks/useSelect';
 import "./Form.scss";
 
-const Form = () => {
+const Form = ({ setCategory }) => {
 
     const [category, SelectNews] = useSelect("general", OPTIONS)
+
+    const handleNews = (e) => {
+        e.preventDefault();
+        setCategory(category);
+    };
 
     return (
         <div className="row">
             <div className="col-sm-12 col-md-8 offset-md-2">
-                <form className="d-flex flex-column align-items-center">
+                <form
+                    onSubmit={handleNews}
+                    className="d-flex flex-column align-items-center"
+                >
                     <h2>Search news by categories</h2>
                     <SelectNews />
                     <div className="mt-5 col-2 wrapper">
