@@ -21,7 +21,7 @@ const Form = ({ setCategory }) => {
                 >
                     <h2 className="my-4">Search news by categories</h2>
                     <SelectNews />
-                    <div className="mt-5 col-2 wrapper">
+                    <div className="mt-3 col-2 wrapper">
                         <button className="slide_from_left">
                             Search
                             <svg style={{ marginLeft: "10px", height: "1.2rem", width: "1.2rem" }} aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="svg-inline--fa fa-search fa-w-16 fa-7x">
