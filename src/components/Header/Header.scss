@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    align-items: center;
+    
+    background: #183561;
+    height: 80px;
+    padding: 0 50px;
+    width: 100%;
+
+    span {
+        color: #fff;
+        font-family: "Raleway";
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
